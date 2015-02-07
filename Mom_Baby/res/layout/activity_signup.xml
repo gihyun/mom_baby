@@ -27,7 +27,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
             android:text="@string/app_name"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -44,7 +44,7 @@
                 android:background="#ff9acd32"
                 android:gravity="center"
                 android:text=" 회 원 가 입"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:text="아이디 "
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/edit_id"
@@ -76,7 +76,7 @@
                     android:layout_below="@id/text_id"
                     android:paddingTop="30dp"
                     android:text="비밀번호 "
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/edit_password"
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="110dp"
                     android:text="닉네임"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/edit_nick"
@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="170dp"
                     android:text="주소"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <Spinner
                     android:id="@+id/spin_add1"
@@ -138,7 +138,7 @@
             android:background="#ffffdab9"
             android:padding="10dp"
             android:text="  완료  "
-            android:textSize="20dp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
 </RelativeLayout>
