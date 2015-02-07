@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ghjh.mom_baby"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".First_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login_Activity" >
+        </activity>
+        <activity android:name=".Main_Activity" >
+        </activity>
+        <activity android:name=".RegOne_Activity" >
+        </activity>
+        <activity android:name=".RegTwo_Activity" >
+        </activity>
+        <activity android:name=".Signup_Activity" >
+        </activity>
+        <activity android:name=".Manager_Activity" >
+        </activity>
+        <activity android:name=".Growth_Activity" >
+        </activity>
+    </application>
+
+</manifest>
