@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class RegOne_Activity extends Activity {
 
@@ -14,8 +15,8 @@ public class RegOne_Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_regone);
 
-		Button btn_regOne = (Button) findViewById(R.id.btn_regOne);
-		btn_regOne.setOnClickListener(new OnClickListener() {
+		ImageButton imgbtn_regOne = (ImageButton)findViewById(R.id.imgbtn_regOne);
+		imgbtn_regOne.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {

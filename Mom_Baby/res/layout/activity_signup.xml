@@ -103,6 +103,7 @@
         android:background="#fcd036"
         android:padding="10dp"
         android:text=" 엄마랑아이랑 사용 시작 "
+        android:textColor="#ffffff"
         android:textSize="20sp" />
 
 </LinearLayout>

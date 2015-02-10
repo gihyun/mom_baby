@@ -67,6 +67,7 @@
         android:background="#fcd036"
         android:padding="10dp"
         android:text=" 로그인 "
+        android:textColor="#ffffff"
         android:textSize="20sp" />
 
     <Button
