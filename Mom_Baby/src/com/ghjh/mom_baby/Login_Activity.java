@@ -14,10 +14,31 @@ public class Login_Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        
+        Button btn_login01 = (Button) findViewById(R.id.btn_login01);
+		btn_login01.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent01 = new Intent(getBaseContext(),
+						Login_Activity.class);
+				startActivity(intent01);
+			}
+		});
+
+		Button btn_signup = (Button) findViewById(R.id.btn_signup);
+		btn_signup.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent02 = new Intent(getBaseContext(),
+						Signup_Activity.class);
+				startActivity(intent02);
+			}
+		});
         Button btn_login = (Button) findViewById(R.id.btn_login02);
         btn_login.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub

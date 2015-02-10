@@ -1,97 +1,79 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.ghjh.mom_baby.Login_Activity" >
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="#fcd036"
         android:gravity="center_vertical"
-        android:orientation="vertical" >
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
         <Button
+            android:id="@+id/btn_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_margin="10dp"
-            android:text="BACK" />
+            android:background="#fcd036"
+            android:text="계정 만들기"
+            android:textColor="#ffffff" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:text="@string/app_name"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_margin="10dp"
-            android:layout_marginTop="25dp"
-            android:background="#fffff0f5"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ff9acd32"
-                android:gravity="center"
-                android:text=" L O G I N "
-                android:textSize="20sp" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:padding="15dp" >
-
-                <TextView
-                    android:id="@+id/text_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="아이디 "
-                    android:textSize="20sp" />
-
-                <EditText
-                    android:id="@+id/edit_id"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@id/text_id"
-                    android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@id/text_id"
-                    android:hint="ex) gildong@gmail.com" />
-
-                <TextView
-                    android:id="@+id/text_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_id"
-                    android:paddingTop="26dp"
-                    android:text="비밀번호 "
-                    android:textSize="20sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/edit_id"
-                    android:layout_below="@id/edit_id"
-                    android:inputType="numberPassword" />
-            </RelativeLayout>
-        </LinearLayout>
+            android:text="  |  "
+            android:textColor="#ffffff" />
 
         <Button
-            android:id="@+id/btn_login02"
+            android:id="@+id/btn_login01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp"
-            android:background="#ffffdab9"
-            android:padding="10dp"
-            android:text="  로그인  "
-            android:textSize="20sp" />
+            android:background="#fcd036"
+            android:text="로그인"
+            android:textColor="#ffffff" />
     </LinearLayout>
 
-</RelativeLayout>
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="이메일"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/btn_login02"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="#fcd036"
+        android:padding="10dp"
+        android:text=" 로그인 "
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="비밀번호를 잊으셨나요?" />
+
+</LinearLayout>

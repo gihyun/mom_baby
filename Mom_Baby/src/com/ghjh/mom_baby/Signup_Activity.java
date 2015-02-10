@@ -18,6 +18,29 @@ public class Signup_Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_signup);
 
+		Button btn_login01 = (Button) findViewById(R.id.btn_login01);
+		btn_login01.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent01 = new Intent(getBaseContext(),
+						Login_Activity.class);
+				startActivity(intent01);
+			}
+		});
+
+		Button btn_signup = (Button) findViewById(R.id.btn_signup);
+		btn_signup.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent02 = new Intent(getBaseContext(),
+						Signup_Activity.class);
+				startActivity(intent02);
+			}
+		});
 		Spinner spinner = (Spinner) findViewById(R.id.spin_add1);
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
 				this, R.array.add1_array, android.R.layout.simple_spinner_item);
