@@ -13,7 +13,7 @@ public class First_Activity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_first);
-/*
+
 		Button btn_login01 = (Button) findViewById(R.id.btn_login01);
 		btn_login01.setOnClickListener(new OnClickListener() {
 
@@ -36,7 +36,7 @@ public class First_Activity extends Activity {
 						Signup_Activity.class);
 				startActivity(intent02);
 			}
-		});*/
+		});
 	}
 
 }
