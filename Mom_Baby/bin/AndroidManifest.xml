@@ -26,15 +26,15 @@
         </activity>
         <activity android:name=".Main_Activity" >
         </activity>
-        <activity android:name=".RegOne_Activity" >
-        </activity>
-        <activity android:name=".RegTwo_Activity" >
-        </activity>
         <activity android:name=".Signup_Activity" >
         </activity>
         <activity android:name=".Manager_Activity" >
         </activity>
         <activity android:name=".Growth_Activity" >
+        </activity>
+        <activity android:name=".AddBaby1_Activity" >
+        </activity>
+        <activity android:name=".AddBaby2_Activity" >
         </activity>
     </application>
 

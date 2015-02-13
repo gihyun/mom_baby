@@ -45,19 +45,18 @@
             android:textColor="#ffffff" />
     </LinearLayout>
 
-    <TextView 
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content"
+    <TextView
         android:layout_width="wrap_content"
-        android:text="이미 접종한 예방주사를 체크해주세요"
-        />
-    
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="이미 접종한 예방주사를 체크해주세요" />
+
     <Button
         android:id="@+id/btn_addcomplete"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="NEXT" />
+        android:text="완료" />
 
 </LinearLayout>
