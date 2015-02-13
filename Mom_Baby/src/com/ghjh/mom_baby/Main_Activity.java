@@ -30,7 +30,8 @@ public class Main_Activity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(getBaseContext(), AddBaby1_Activity.class);
+				Intent intent = new Intent(getBaseContext(),
+						AddBaby1_Activity.class);
 				startActivity(intent);
 			}
 		});
@@ -46,8 +47,6 @@ public class Main_Activity extends Activity {
 				startActivity(intent);
 			}
 		});
-		
-
 	}
 
 }
