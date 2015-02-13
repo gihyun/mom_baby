@@ -16,11 +16,10 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/baby1" />
 
-        <TextView 
-            android:layout_height="wrap_content"
+        <TextView
             android:layout_width="wrap_content"
-            android:text="민국이 사진에 달력이 와야됨"
-            />
+            android:layout_height="wrap_content"
+            android:text="민국이 사진에 달력이 와야됨" />
     </LinearLayout>
 
 </LinearLayout>

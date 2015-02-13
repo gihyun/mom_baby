@@ -71,6 +71,18 @@ public class Main_Activity extends Activity {
 				startActivity(intent);
 			}
 		});
+
+		Button btn_magazine = (Button) findViewById(R.id.btn_magazine);
+		btn_magazine.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getBaseContext(),
+						Magazine_Activity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 }
