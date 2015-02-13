@@ -36,6 +36,8 @@
         </activity>
         <activity android:name=".AddBaby2_Activity" >
         </activity>
+        <activity android:name=".Diagnose_Activity" >
+        </activity>
     </application>
 
 </manifest>
