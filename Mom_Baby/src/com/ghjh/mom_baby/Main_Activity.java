@@ -35,6 +35,19 @@ public class Main_Activity extends Activity {
 			}
 		});
 
+		Button btn_growth = (Button) findViewById(R.id.btn_growth);
+		btn_growth.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getBaseContext(),
+						Growth_Activity.class);
+				startActivity(intent);
+			}
+		});
+		
+
 	}
 
 }
