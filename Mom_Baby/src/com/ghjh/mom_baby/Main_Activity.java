@@ -14,14 +14,24 @@ public class Main_Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		Button btn_manager = (Button) findViewById(R.id.btn_manager);
-		btn_manager.setOnClickListener(new OnClickListener() {
+		Button btn_regOne = (Button) findViewById(R.id.btn_regOne);
+		btn_regOne.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		Button btn_register = (Button) findViewById(R.id.btn_register);
+		btn_register.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(getBaseContext(),
-						RegOne_Activity.class);
+						AddBaby1_Activity.class);
 				startActivity(intent);
 			}
 		});
