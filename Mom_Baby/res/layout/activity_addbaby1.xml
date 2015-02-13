@@ -70,7 +70,8 @@
 
             <EditText
                 android:layout_width="130dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                 />
         </LinearLayout>
 
         <LinearLayout
@@ -127,11 +128,13 @@
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
-                android:text="신장" />
+                android:text="신장"
+                 />
 
             <EditText
                 android:layout_width="130dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="number" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -153,7 +156,8 @@
 
             <EditText
                 android:layout_width="130dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="number" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -175,7 +179,8 @@
 
             <EditText
                 android:layout_width="130dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="number" />
 
             <TextView
                 android:layout_width="wrap_content"

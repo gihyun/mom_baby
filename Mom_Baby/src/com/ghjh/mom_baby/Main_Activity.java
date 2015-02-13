@@ -36,6 +36,18 @@ public class Main_Activity extends Activity {
 			}
 		});
 
+		Button btn_injection = (Button) findViewById(R.id.btn_injection);
+		btn_injection.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getBaseContext(),
+						Injection_Activity.class);
+				startActivity(intent);
+			}
+		});
+		
 		Button btn_growth = (Button) findViewById(R.id.btn_growth);
 		btn_growth.setOnClickListener(new OnClickListener() {
 
