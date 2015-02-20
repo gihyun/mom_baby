@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 public class Signup_Activity extends Activity {
@@ -18,15 +19,15 @@ public class Signup_Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_signup);
 
-		Button btn_login01 = (Button) findViewById(R.id.btn_login01);
-		btn_login01.setOnClickListener(new OnClickListener() {
+		Button btn_login = (Button) findViewById(R.id.btn_login);
+		btn_login.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent01 = new Intent(getBaseContext(),
+				Intent intent = new Intent(getBaseContext(),
 						Login_Activity.class);
-				startActivity(intent01);
+				startActivity(intent);
 			}
 		});
 
@@ -36,11 +37,12 @@ public class Signup_Activity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent02 = new Intent(getBaseContext(),
+				Intent intent = new Intent(getBaseContext(),
 						Signup_Activity.class);
-				startActivity(intent02);
+				startActivity(intent);
 			}
 		});
+
 		Spinner spinner = (Spinner) findViewById(R.id.spin_add1);
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
 				this, R.array.add1_array, android.R.layout.simple_spinner_item);
@@ -56,13 +58,23 @@ public class Signup_Activity extends Activity {
 			}
 		});
 
-		Button btn_complete = (Button) findViewById(R.id.btn_complete);
-		btn_complete.setOnClickListener(new OnClickListener() {
-			
+		Button btn_start = (Button) findViewById(R.id.btn_start);
+		btn_start.setOnClickListener(new OnClickListener() {
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(getBaseContext(), Main_Activity.class);
+				EditText edit_email = (EditText) findViewById(R.id.edit_email);
+				String str_email = edit_email.getText().toString();
+
+				EditText edit_passwd = (EditText) findViewById(R.id.edit_passwd);
+				String str_passwd = edit_passwd.getText().toString();
+
+				EditText edit_nickname = (EditText) findViewById(R.id.edit_nickname);
+				String str_nickname = edit_nickname.getText().toString();
+
+				Intent intent = new Intent(getBaseContext(),
+						Main_Activity.class);
 				startActivity(intent);
 			}
 		});

@@ -37,7 +37,7 @@
             android:textColor="#ffffff" />
 
         <Button
-            android:id="@+id/btn_login01"
+            android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#fcd036"
@@ -50,23 +50,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="계정 만들기"
-        android:textStyle="bold"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/edit_email"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:inputType="textEmailAddress"
-        android:hint="이메일" />
+        android:hint="이메일"
+        android:inputType="textEmailAddress" />
 
     <EditText
+        android:id="@+id/edit_passwd"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:inputType="numberPassword"
-        android:hint="비밀번호" />
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
 
     <EditText
+        android:id="@+id/edit_nickname"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:hint="닉네임" />
@@ -95,7 +98,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_complete"
+        android:id="@+id/btn_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
