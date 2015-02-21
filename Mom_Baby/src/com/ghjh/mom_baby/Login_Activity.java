@@ -1,16 +1,18 @@
 package com.ghjh.mom_baby;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
-import android.text.SpannableString;
-import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login_Activity extends Activity {
 
@@ -63,14 +65,26 @@ public class Login_Activity extends Activity {
 		String str_forget = "비밀번호를 잊으셨나요?";
 		txt_forget.setText(Html.fromHtml("<u>" + str_forget + "</u>"));
 
-		txt_forget.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
-			}
-		});
 	}
 
+	public void mOnClick(View v) {
+		final LinearLayout linear = (LinearLayout) View.inflate(this,
+				R.layout.forgetpasswd, null);
+
+		new AlertDialog.Builder(this)
+				.setTitle("비밀번호를 잊으셨나요?")
+				.setView(linear)
+				.setPositiveButton("비밀번호 재설정",
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+								// TODO Auto-generated method stub
+								Toast.makeText(getBaseContext(), "go",
+										Toast.LENGTH_SHORT).show();
+							}
+						}).show();
+
+	}
 }

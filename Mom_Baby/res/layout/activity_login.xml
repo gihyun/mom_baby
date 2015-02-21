@@ -80,6 +80,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:clickable="true"
+        android:onClick="mOnClick"
         android:text="비밀번호를 잊으셨나요?"
         android:textColor="#ffc107" />
 

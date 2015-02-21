@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 public class Signup_Activity extends Activity {
+	ArrayAdapter<CharSequence> adspin;
+	boolean mInitSpinner;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,15 +45,21 @@ public class Signup_Activity extends Activity {
 			}
 		});
 
-		Spinner spinner = (Spinner) findViewById(R.id.spin_add1);
-		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-				this, R.array.add1_array, android.R.layout.simple_spinner_item);
-		adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-		spinner.setAdapter(adapter);
-		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+		Spinner spin = (Spinner) findViewById(R.id.spin_add1);
+		adspin = ArrayAdapter.createFromResource(this, R.array.add1_array,
+				android.R.layout.simple_spinner_item);
+		adspin.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spin.setAdapter(adspin);
+
+		spin.setOnItemSelectedListener(new OnItemSelectedListener() {
 
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int pos, long id) {
+				/* 초기화 시의 선택 제외시 */
+				if (mInitSpinner == false) {
+					mInitSpinner = true;
+					return;
+				}
 			}
 
 			public void onNothingSelected(AdapterView<?> arg0) {
