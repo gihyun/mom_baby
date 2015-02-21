@@ -69,7 +69,7 @@
         <Button
             android:id="@+id/btn_injection"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:text="예방접종 일정"
             android:textSize="20sp" />
@@ -77,7 +77,7 @@
         <Button
             android:id="@+id/btn_growth"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:text="성장 진단"
             android:textSize="20sp" />
@@ -85,7 +85,7 @@
         <Button
             android:id="@+id/btn_diary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:text="육아 일기"
             android:textSize="20sp" />
@@ -93,7 +93,7 @@
         <Button
             android:id="@+id/btn_hospital"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:text="주변 보건소"
             android:textSize="20sp" />
@@ -101,7 +101,7 @@
         <Button
             android:id="@+id/btn_magazine"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:text="육아 매거진"
             android:textSize="20sp" />
