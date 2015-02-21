@@ -77,6 +77,7 @@
     <TextView
         android:layout_width="230dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="주소"
         android:textSize="15sp" />
 
@@ -88,12 +89,12 @@
 
         <Spinner
             android:id="@+id/spin_add1"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content" />
 
         <Spinner
             android:id="@+id/spin_add2"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
 

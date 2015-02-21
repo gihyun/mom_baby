@@ -13,8 +13,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 public class Signup_Activity extends Activity {
-	ArrayAdapter<CharSequence> adspin;
-	boolean mInitSpinner;
+	Spinner spinner01;
+	Spinner spinner02;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,26 +45,13 @@ public class Signup_Activity extends Activity {
 			}
 		});
 
-		Spinner spin = (Spinner) findViewById(R.id.spin_add1);
-		adspin = ArrayAdapter.createFromResource(this, R.array.add1_array,
-				android.R.layout.simple_spinner_item);
-		adspin.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spin.setAdapter(adspin);
+		spinner01 = (Spinner) findViewById(R.id.spin_add1);
+		populateSpinners();
 
-		spin.setOnItemSelectedListener(new OnItemSelectedListener() {
+		spinner02 = (Spinner) findViewById(R.id.spin_add2);
+		populateSpinners();
 
-			public void onItemSelected(AdapterView<?> parent, View view,
-					int pos, long id) {
-				/* 초기화 시의 선택 제외시 */
-				if (mInitSpinner == false) {
-					mInitSpinner = true;
-					return;
-				}
-			}
-
-			public void onNothingSelected(AdapterView<?> arg0) {
-			}
-		});
+		spinner01.setOnItemSelectedListener(spinSelectedListener);
 
 		Button btn_start = (Button) findViewById(R.id.btn_start);
 		btn_start.setOnClickListener(new OnClickListener() {
@@ -88,4 +75,90 @@ public class Signup_Activity extends Activity {
 		});
 	}
 
+	private void populateSpinners() {
+		ArrayAdapter<CharSequence> adspin;
+		adspin = ArrayAdapter.createFromResource(this, R.array.main_spinner,
+				android.R.layout.simple_spinner_item);
+		adspin.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner01.setAdapter(adspin);
+	}
+
+	private void populateSubSpinners(int itemNum) {
+		ArrayAdapter<CharSequence> adspin;
+		adspin = ArrayAdapter.createFromResource(this, itemNum,
+				android.R.layout.simple_spinner_item);
+		adspin.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner02.setAdapter(adspin);
+	}
+
+	private OnItemSelectedListener spinSelectedListener = new OnItemSelectedListener() {
+
+		@Override
+		public void onItemSelected(AdapterView<?> parent, View view,
+				int position, long id) {
+			// TODO Auto-generated method stub
+			switch (position) {
+			case 0:
+				populateSubSpinners(R.array.sub_spinner_seoul);
+				break;
+			case 1:
+				populateSubSpinners(R.array.sub_spinner_busan);
+				break;
+			case 2:
+				populateSubSpinners(R.array.sub_spinner_daegu);
+				break;
+			case 3:
+				populateSubSpinners(R.array.sub_spinner_incheon);
+				break;
+			case 4:
+				populateSubSpinners(R.array.sub_spinner_gwangju);
+				break;
+			case 5:
+				populateSubSpinners(R.array.sub_spinner_daejeon);
+				break;
+			case 6:
+				populateSubSpinners(R.array.sub_spinner_woolsan);
+				break;
+			case 7:
+				populateSubSpinners(R.array.sub_spinner_gyeonggi);
+				break;
+			case 8:
+				populateSubSpinners(R.array.sub_spinner_gangwon);
+				break;
+			case 9:
+				populateSubSpinners(R.array.sub_spinner_chungbuk);
+				break;
+			case 10:
+				populateSubSpinners(R.array.sub_spinner_chungnam);
+				break;
+			case 11:
+				populateSubSpinners(R.array.sub_spinner_jeonbuk);
+				break;
+			case 12:
+				populateSubSpinners(R.array.sub_spinner_jeonnam);
+				break;
+			case 13:
+				populateSubSpinners(R.array.sub_spinner_gyeongbuk);
+				break;
+			case 14:
+				populateSubSpinners(R.array.sub_spinner_gyeongnam);
+				break;
+			case 15:
+				populateSubSpinners(R.array.sub_spinner_sejong);
+				break;
+			case 16:
+				populateSubSpinners(R.array.sub_spinner_jeju);
+				break;
+
+			default:
+				break;
+			}
+		}
+
+		@Override
+		public void onNothingSelected(AdapterView<?> parent) {
+			// TODO Auto-generated method stub
+
+		}
+	};
 }
