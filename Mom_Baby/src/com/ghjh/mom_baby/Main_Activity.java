@@ -59,6 +59,18 @@ public class Main_Activity extends Activity {
 				startActivity(intent);
 			}
 		});
+		
+		Button btn_diary = (Button) findViewById(R.id.btn_diary);
+		btn_diary.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getBaseContext(),
+						Diary_Activity.class);
+				startActivity(intent);
+			}
+		});
 
 		Button btn_hospital = (Button) findViewById(R.id.btn_hospital);
 		btn_hospital.setOnClickListener(new OnClickListener() {
